@@ -1,0 +1,14 @@
+body {
+   --color-a01: red;
+  --color-a02: green;
+}
+
+body.light {
+     --color-a01  : LightCoral;
+  --color-a02 : lightGreen;
+}
+
+body.dark {
+  --color-a01: DarkRed;
+  --color-a02: darkGreen;
+}
