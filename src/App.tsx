@@ -31,7 +31,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1><span style={{color: 'var(--color-a01)'}}>Vite</span> + <span style={{color: 'var(--color-a02)'}}>React</span></h1>
+      <h1>
+        <span style={{color: 'var(--color-a01)'}}>Vi</span>
+        <span className={'c-a01'}>te</span>
+        &nbsp;<span className={'c-a03'}>+</span>&nbsp;
+        <span style={{color: 'var(--color-a02)'}}>Re</span>
+        <span className={'c-a02'}>act</span>
+      </h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -44,7 +50,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className="read-the-docs bg-a03 c-black b-1 b-solid b-a03">
         Click on the Vite and React logos to learn more
       </p>
     </>

@@ -3,12 +3,13 @@ import fs from 'node:fs'
 import {defineConfig, type PluginOption} from 'vite'
 import react from '@vitejs/plugin-react'
 import {createHtmlPlugin} from "vite-plugin-html";
-import { transform } from 'lightningcss'
 import * as csstree from 'css-tree'
+import UnoCSS from 'unocss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    UnoCSS(),
     react(),
     createHtmlPlugin(createHtmlPluginConfig()),
     createVitePluginTransformCss(),
